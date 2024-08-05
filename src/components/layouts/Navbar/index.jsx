@@ -59,7 +59,7 @@ export default function Navbar() {
         <Link href="/">
           <div
             className={`font-medium cursor-pointer hover:underline ${
-              activeMenu === "home" && "underline underline-offset-4ya"
+              activeMenu === "home" && "underline underline-offset-4"
             }`}
           >
             Home
