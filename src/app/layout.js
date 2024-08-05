@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Muhammad Fadly Hidayat",
   description: "Web Portfolio",
+  icons: {
+    icon: "/images/onepiece.png",
+  },
 };
 
 export default function RootLayout({ children }) {
