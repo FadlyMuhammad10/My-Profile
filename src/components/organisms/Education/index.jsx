@@ -12,9 +12,10 @@ export default function Education() {
         <div> 2020 - 2024</div>
         <div className="flex flex-col gap-2 ">
           <div className="text-xl font-bold">
-            Bachelor of Information Systems (GPA 3.64)
+            Bachelor of Information Systems
           </div>
           <div className="text-lg">Amikom Yogyakarta University</div>
+          <div className="text-md text-muted-foreground">GPA 3.64</div>
         </div>
       </div>
       <div className="flex flex-row gap-5 items-start">
