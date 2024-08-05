@@ -18,7 +18,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} relative overflow-x-hidden bg-secondary `}
       >
-        <div className="shadow-sm bg-primary ">
+        <div className="shadow-sm bg-primary sticky top-0 right-0 left-0 z-50 ">
+          {" "}
+          {/* sticky untuk membuat navbar tetap diatas dengan awalnya relative to fixed dan z-50 untuk membuat lapisan */}
           <Navbar />
         </div>
         <main>{children}</main>
