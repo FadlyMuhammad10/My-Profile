@@ -9,27 +9,27 @@ export default async function Experience() {
 
   return (
     <div className="flex flex-col gap-5 " data-aos="fade-down">
-      <TitleSection title="Experience" />
-      <Separator className="my-4 bg-black" />
+      <TitleSection title="Experiences" />
+      <Separator className="my-4 bg-sky-500 text-sky-500 border-sky-500" />
 
-      <div className="grid grid-cols-2 gap-4   ">
+      <div className="grid grid-cols-2 gap-4">
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col gap-5 mx-auto shadow-md border border-primary  bg-white/30 p-5 rounded-sm  "
+            className="flex flex-col gap-5 mx-auto shadow-md border-4 border-primary   p-5 rounded-sm  "
           >
             <div className="text-center justify-center ">
-              <Badge variant="outline" className="border-primary ">
+              <Badge variant="outline" className="border-primary text-white ">
                 {item.startDate} - {item.endDate}
               </Badge>
             </div>
-            <div className=" text-center font-semibold ">
+            <div className=" text-center font-semibold text-sky-500 ">
               <span>
                 {item.title} <br />
-                {item.tag}
+                {item.tag && <span>({item.tag})</span>}
               </span>
             </div>
-            <div className="text-justify tracking-normal">
+            <div className="text-justify tracking-normal text-white">
               {item.description}
             </div>
             <div className="flex flex-col gap-2">
@@ -42,7 +42,7 @@ export default async function Experience() {
                 <Badge
                   key={index}
                   variant={"outline"}
-                  className={"border-primary"}
+                  className={"border-primary text-white"}
                 >
                   {item}
                 </Badge>

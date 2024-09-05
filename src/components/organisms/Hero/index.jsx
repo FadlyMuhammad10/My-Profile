@@ -7,7 +7,7 @@ import Skill from "../Skills";
 export default function Hero() {
   return (
     <div className="flex flex-col gap-10 pb-16">
-      <div className="container relative">
+      <div className="container h-[90vh]">
         <AboutMe />
       </div>
       <div className="container">
@@ -19,12 +19,6 @@ export default function Hero() {
       <div className="container overflow-hidden">
         <Skill />
       </div>
-      {/* <div className="container text-primary">
-        <Certification />
-      </div>
-      <div className="container text-primary">
-        <Portfolio />
-      </div> */}
     </div>
   );
 }

@@ -6,7 +6,7 @@ export default function Skill() {
   return (
     <div className="flex flex-col gap-5" data-aos="fade-up">
       <TitleSection title="My Skills" />
-      <Separator className="my-4 bg-black" />
+      <Separator className="my-4 bg-sky-500 text-sky-500 border-sky-500" />
       <div className=" grid grid-cols-6 pb-2 gap-4 ">
         <GridSkill url="/images/html.png" title="HTML" />
         <GridSkill url="/images/css.png" title="CSS" />

@@ -74,8 +74,8 @@
 /* about me */
 .title-name {
   overflow: hidden; /* Mengatur overflow agar teks yang keluar dari kontainer tidak terlihat */
-  white-space: nowrap; /* Mencegah teks pindah ke baris baru */
-  animation: revealText 5s steps(22) forwards; /* Animasi untuk mengungkapkan teks */
+  white-space: wrap; /* Mencegah teks pindah ke baris baru */
+  animation: revealText 3s steps(22) forwards; /* Animasi untuk mengungkapkan teks */
 }
 
 @keyframes revealText {
