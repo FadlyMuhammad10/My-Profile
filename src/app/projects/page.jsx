@@ -8,7 +8,7 @@ export default async function Projects() {
   const data = await axios.get("/api/project");
 
   return (
-    <div className="container py-5  flex flex-col gap-5 ">
+    <div className="container py-5  flex flex-col gap-10 ">
       {data.map((item, index) => (
         <div
           key={index}
